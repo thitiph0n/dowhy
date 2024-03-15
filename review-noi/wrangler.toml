@@ -1,0 +1,24 @@
+name = "review-noi"
+compatibility_date = "2023-12-01"
+
+# [vars]
+# MY_VAR = "my-variable"
+
+[env.staging]
+kv_namespaces = [
+    { binding = "REVIEW_NOI", id = "6c8d84e7faf34ff09d05816c192ea7a3" },
+]
+
+[env.production]
+kv_namespaces = [
+    { binding = "REVIEW_NOI", id = "21a7a0e938244c2882edac9f9925b758" },
+]
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
